@@ -58,4 +58,4 @@ def generate_prompt(product_id, field, value, dataset):
         ]
     )
     
-    return messages.choices[0].message.content
+    return messages.choices[0].message.content.replace('```json', '').replace('```', '')
