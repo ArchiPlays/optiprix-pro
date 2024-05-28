@@ -13,7 +13,7 @@ client=OpenAI(api_key=api_key)
 # Function to get rows from the dataset based on product_id
 def get_rows(product_id, dataset_url):
     df = pd.read_csv(dataset_url)
-    # get rows where product_id column matches the product_id, but return all the rows in the format bed1,col2,col3,... replacing col2, col3, ... with the actual column values. 
+    # get rows where product_id column matches product_id, but return all the rows in the format bed1,col2,col3,... replacing col2, col3, ... with the actual column values. 
     rows = df[df['product_id'] == product_id]
     rows_str = ''
     # Take the first row in df and join it with commas to get the column names e.g. add product_id,product_category_name,month_year,qty,total_price,freight_price,unit_price,product_name_lenght,product_description_lenght,product_photos_qty,product_weight_g,product_score,customers,weekday,weekend,holiday,month,year,s,volume,comp_1,ps1,fp1,comp_2,ps2,fp2,comp_3,ps3,fp3,lag_price\n
