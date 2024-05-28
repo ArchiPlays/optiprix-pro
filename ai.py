@@ -10,7 +10,7 @@ api_key = os.getenv('API_KEY')
 # Initialize the AzureOpenAI client
 client=OpenAI(api_key=api_key)
 
-# Function to get rows from the dataset based on the product_id
+# Function to get rows from the dataset based on product_id
 def get_rows(product_id, dataset_url):
     df = pd.read_csv(dataset_url)
     # get rows where product_id column matches the product_id, but return all the rows in the format bed1,col2,col3,... replacing col2, col3, ... with the actual column values. 
