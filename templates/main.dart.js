@@ -24978,7 +24978,7 @@ this.b=b},
 amn(){var s=0,r=A.V(t.b5),q,p,o,n,m
 var $async$amn=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:s=3
-return A.Y(A.amm(A.er("https://optiprix-server.azurewebsites.net/api/available_datasets",0,null)),$async$amn)
+return A.Y(A.amm(A.er("http://localhost:5000/api/available_datasets",0,null)),$async$amn)
 case 3:m=b
 try{if(m.b===200){o=m
 p=B.bO.u6(A.am7(A.ald(o.e).c.a.h(0,"charset")).eY(o.w),null)
@@ -24993,7 +24993,7 @@ return A.U($async$amn,r)},
 VO(a){var s=0,r=A.V(t.yp),q,p,o
 var $async$VO=A.W(function(b,c){if(b===1)return A.S(c,r)
 while(true)switch(s){case 0:s=3
-return A.Y(A.amm(A.er("https://optiprix-server.azurewebsites.net/api/list_products/"+a,0,null)),$async$VO)
+return A.Y(A.amm(A.er("http://localhost:5000/api/list_products/"+a,0,null)),$async$VO)
 case 3:o=c
 if(o.b===200){p=J.im(B.bO.u6(A.am7(A.ald(o.e).c.a.h(0,"charset")).eY(o.w),null),new A.amr(),t.N)
 q=A.a8(p,!0,A.l(p).i("aj.E"))
@@ -25004,7 +25004,7 @@ return A.U($async$VO,r)},
 ams(a,b,c,d){var s=0,r=A.V(t.a),q,p
 var $async$ams=A.W(function(e,f){if(e===1)return A.S(f,r)
 while(true)switch(s){case 0:s=3
-return A.Y(A.amm(A.er("https://optiprix-server.azurewebsites.net/api/"+a+"/"+b+"/"+c+"?dataset="+d,0,null)),$async$ams)
+return A.Y(A.amm(A.er("http://localhost:5000/api/"+a+"/"+b+"/"+c+"?dataset="+d,0,null)),$async$ams)
 case 3:p=f
 if(p.b===200){q=t.a.a(B.bO.u6(A.am7(A.ald(p.e).c.a.h(0,"charset")).eY(p.w),null))
 s=1
@@ -25014,7 +25014,7 @@ return A.U($async$ams,r)},
 F7(a,b){var s=0,r=A.V(t.bK),q,p,o,n,m
 var $async$F7=A.W(function(c,d){if(c===1)return A.S(d,r)
 while(true)switch(s){case 0:s=3
-return A.Y(A.amm(A.er("https://optiprix-server.azurewebsites.net/api/product_history/"+a+"?dataset="+b,0,null)),$async$F7)
+return A.Y(A.amm(A.er("http://localhost:5000/api/product_history/"+a+"?dataset="+b,0,null)),$async$F7)
 case 3:m=d
 try{if(m.b===200){o=m
 p=B.bO.u6(A.am7(A.ald(o.e).c.a.h(0,"charset")).eY(o.w),null)

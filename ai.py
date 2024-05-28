@@ -1,16 +1,14 @@
 import os
 import pandas as pd
 
-from openai import AzureOpenAI
+from openai import OpenAI
 
 from generate_prompt import get_prompt
 
 api_key = os.getenv('API_KEY')
-api_version = os.getenv('API_VERSION')
-azure_endpoint = os.getenv('AZURE_ENDPOINT')
 
 # Initialize the AzureOpenAI client
-client=AzureOpenAI(api_key=api_key, api_version=api_version, azure_endpoint=azure_endpoint)
+client=OpenAI(api_key=api_key)
 
 # Function to get rows from the dataset based on the product_id
 def get_rows(product_id, dataset_url):
